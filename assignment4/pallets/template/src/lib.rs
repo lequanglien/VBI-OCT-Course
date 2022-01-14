@@ -18,7 +18,7 @@ pub mod pallet {
 	use scale_info::TypeInfo;
 
 	#[derive(Clone, Encode, Decode, PartialEq, RuntimeDebug, TypeInfo)]
-	#[scale_info(skip_type_params(T))]
+	// #[scale_info(skip_type_params(T))]
 	pub struct Photo {
 		pub name: Vec<u8>,
 		pub hash: Vec<u8>,
